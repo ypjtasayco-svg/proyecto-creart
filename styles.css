@@ -1,0 +1,219 @@
+﻿/* Variables para mantener colores ordenados */
+:root {
+  --bg-dark: #2f2f2f;
+  --bg-warm: #8d5530;
+  --orange: #ff9f00;
+  --orange-strong: #ff7a00;
+  --text: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #d7d7d7;
+  color: var(--text);
+}
+
+.page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 16px 24px 40px;
+  background: radial-gradient(circle at 50% 10%, #4d4744 0%, #7e573c 48%, #c4702e 100%);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 2rem;
+  color: var(--orange);
+}
+
+.brand-logo {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+.menu-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links a {
+  color: #f3f3f3;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1.12rem;
+}
+
+.menu-icon {
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.menu-icon-service {
+  color: var(--orange);
+}
+
+.section-flare {
+  height: 6px;
+  margin: 36px auto;
+  width: min(100%, 960px);
+  background: linear-gradient(90deg, transparent, #ff4900, #ffc82b, #ff4900, transparent);
+  border-radius: 999px;
+  box-shadow: 0 0 18px #ff8f2a;
+}
+
+.section-block h2 {
+  text-align: center;
+  color: var(--orange);
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin: 0 0 22px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  position: relative;
+  border: 3px solid #f58500;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.4);
+  background: #2d190f;
+}
+
+.card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.1);
+}
+
+.card h3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 10px 8px;
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 2rem);
+  background: linear-gradient(180deg, #d2850f, #b26403);
+  border-top: 1px solid #ffb347;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 2;
+}
+
+/* Al pasar el mouse aparece el recuadro inferior con el nombre */
+.card:hover h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Se ocultan los botones anteriores para usar solo el recuadro del nombre */
+.card-actions {
+  display: none;
+}
+
+.footer {
+  background: #454545;
+  padding: 18px 22px 28px;
+}
+
+.footer h2 {
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 14px;
+}
+
+.footer-cols p {
+  margin: 0;
+  color: #efefef;
+  font-size: 1.02rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .menu-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .page {
+    padding: 12px;
+  }
+
+  .menu-links {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
