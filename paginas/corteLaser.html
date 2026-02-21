@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CreArt</title>
+  <title>Corte Laser | CreArt</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -11,11 +11,9 @@
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-  <main class="page">
-    <!-- Menú principal -->
+  <main class="page laser-page">
     <nav class="menu">
       <div class="brand">
-        <!-- Logo cargado desde assets -->
         <img class="brand-logo" src="../imagenes/CRE_ARTLOGO.png" alt="Logo CreArt" />
       </div>
 
@@ -26,7 +24,7 @@
             Inicio
           </a>
         </li>
-        
+
         <li class="has-submenu">
           <a href="#productos">
             <span class="material-symbols-outlined menu-icon">sell</span>
@@ -34,19 +32,19 @@
           </a>
           <ul class="submenu">
             <li><a href="#cotiza-pedido">Cotiza pedido</a></li>
-            <li><a href="#tienda-catalogo">Tienda/Catálogo</a></li>
+            <li><a href="#tienda-catalogo">Tienda/Catalogo</a></li>
           </ul>
         </li>
 
         <li class="has-submenu">
-          <a href="servicios.html">
+          <a class="is-active" href="servicios.html">
             <span class="material-symbols-outlined menu-icon menu-icon-service">toc</span>
             Servicio
           </a>
           <ul class="submenu">
-            <li><a href="servicios.html#impresion-3d">Impresión 3D</a></li>
+            <li><a href="servicios.html#impresion-3d">Impresion 3D</a></li>
             <li><a href="corteLaser.html">Corte Laser</a></li>
-            <li><a href="servicios.html#papeleria-creativa">Papelería Creativa</a></li>
+            <li><a href="servicios.html#papeleria-creativa">Papeleria Creativa</a></li>
           </ul>
         </li>
 
@@ -58,142 +56,67 @@
         </li>
       </ul>
     </nav>
-    <!-- Sección de materiales -->
-    <section class="section-block">
-      <h2>Materiales</h2>
-      <div class="card-grid">
-        <!-- Cada tarjeta usa la misma estructura para facilitar edición -->
-        <article class="card">
-          <img src="../imagenes/MDF.png" alt="MDF" />
-          <h3>MDF</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
+
+    <section class="page-banner laser-banner">
+      <div class="page-banner-content">
+        <p class="page-banner-kicker">Corte Laser</p>
+        <h2>Precision y acabado profesional en cada pieza</h2>
+        <p class="page-banner-text">Trabajamos con MDF, acrilico, carton y mas para tus ideas personalizadas.</p>
+      </div>
+    </section>
+
+    <section class="laser-workflow" id="corte-laser">
+      <div class="laser-workflow-copy">
+        <h1>Como trabajamos en CreArt?</h1>
+        <p>Corte laser preciso para piezas personalizadas, decorativas y funcionales.</p>
+      </div>
+
+      <div class="laser-steps">
+        <article class="laser-step-card">
+          <span class="laser-step-number">1</span>
+          <p>Envianos tu idea o diseno</p>
         </article>
 
-        <article class="card">
-          <img src="../imagenes/ACRILICO.png" alt="Acrílico" />
-          <h3>Acrílico</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
+        <article class="laser-step-card">
+          <span class="laser-step-number">2</span>
+          <p>Eliges material y tamano</p>
         </article>
 
-        <article class="card">
-          <img src="../imagenes/triplay.png" alt="Triplay" />
-          <h3>Triplay / Madera</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/CARTON.png" alt="Cartón" />
-          <h3>Cartón</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/CUERO.png" alt="Cuero sintético" />
-          <h3>Cuero sintético</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/Cartulina.png" alt="Cartulina" />
-          <h3>Cartulina / Goma eva</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
+        <article class="laser-step-card">
+          <span class="laser-step-number">3</span>
+          <p>Cortamos y entregamos tu pieza</p>
         </article>
       </div>
     </section>
 
-    <div class="section-flare"></div>
+    <section class="laser-panels" id="tienda-catalogo">
+      <article class="laser-panel" id="materiales-corte">
+        <h2>Materiales disponibles</h2>
+        <div class="laser-tags">
+          <span>MDF</span>
+          <span>Acrilico</span>
+          <span>Triplay</span>
+          <span>Carton</span>
+        </div>
+      </article>
 
-    <!-- Sección de tipos de trabajos -->
-    <section class="section-block">
-      <h2>Tipos de Trabajos</h2>
-      <div class="card-grid">
-        <article class="card">
-          <img src="../imagenes/grabadopersonalizado.png" alt="Grabado" />
-          <h3>Grabado Personalizado</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/cortepersonalizado.png" alt="Corte" />
-          <h3>Corte personalizado</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/llaverospersonalizados.png" alt="Llaveros" />
-          <h3>Llaveros Personalizados</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/cajasyorganizadores.png" alt="Cajas" />
-          <h3>Cajas y Organizadores</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/piezasdecorativas.png" alt="Piezas" />
-          <h3>Piezas decorativas</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-
-        <article class="card">
-          <img src="../imagenes/PROTOTIPOS.png" alt="Prototipos" />
-          <h3>Prototipos</h3>
-          <div class="card-actions">
-            <button>Ver más</button>
-            <button>Cotizar</button>
-          </div>
-        </article>
-      </div>
+      <article class="laser-panel" id="cotiza-pedido">
+        <h2>Listo para hacerlo realidad?</h2>
+        <a class="laser-quote-btn" href="#">Cotizar corte laser</a>
+      </article>
     </section>
   </main>
 
-  <!-- Pie de página -->
   <footer class="footer">
     <h2>Servicios destacados</h2>
-    <div class="footer-cols">
-      <!-- Columnas de texto de ejemplo para reemplazar líneas -->
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra justo at sem volutpat aliquet.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis, lorem eu facilisis volutpat, eros nunc varius dui.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nisi sed nibh aliquet, vitae placerat magna dictum.</p>
+    <div class="footer-cols laser-footer-cols">
+      <p>Impresion 3D</p>
+      <p>Corte Laser</p>
+      <p>Papeleria Creativa</p>
     </div>
     <div class="footer-info">
-      <p>📍 Av. Pachacútec 566 - Lima Perú</p>
-      <p>🕗 Lun a Vie de 8:00 a.m a 18:00</p>
+      <p><span class="material-symbols-outlined">location_on</span> Av. Pachacutec 566 - Lima Peru</p>
+      <p><span class="material-symbols-outlined">schedule</span> Lun a Vie de 8:00 a.m a 18:00</p>
     </div>
   </footer>
 </body>
